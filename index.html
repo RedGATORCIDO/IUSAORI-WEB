@@ -8,9 +8,9 @@
     /* Estructura general */
     body {
       margin: 0;
-      min-height: 100vh;
+      min-height: 100vh;       /* ocupa toda la pantalla */
       display: flex;
-      flex-direction: column;
+      flex-direction: column;  /* organiza header, main y footer */
       font-family: Arial, sans-serif;
       background: #ffffff;
     }
@@ -19,22 +19,16 @@
       flex: 1; /* ocupa el espacio central y empuja el footer */
     }
 
-    /* Header y Footer con estilo gota */
-    header, footer {
-      background: #faf3e0;
-      border-radius: 50% 50% 40% 40% / 30% 30% 70% 70%; /* forma tipo gota */
-      padding: 20px;
+    /* Header */
+    header {
+      background-color: #faf3e0; /* beige elegante */
+      color: #222;
+      padding: 15px;
       text-align: center;
-      transition: transform 0.3s ease, border-radius 0.3s ease;
-    }
-
-    header:hover, footer:hover {
-      transform: scale(1.02) skewX(2deg); /* ligera deformación */
-      border-radius: 45% 55% 35% 45% / 35% 25% 65% 75%; /* cambia la curva */
     }
 
     header img {
-      height: 80px;
+      height: 80px; /* tamaño moderado del logo */
     }
 
     nav a {
@@ -88,7 +82,14 @@
       box-shadow: 0 6px 18px rgba(0,0,0,0.2);
     }
 
-    /* Footer enlaces */
+    /* Footer */
+    footer {
+      background-color: #faf3e0; /* mismo beige que el header */
+      color: #222;
+      text-align: center;
+      padding: 15px;
+    }
+
     footer a {
       color: #222;
       margin: 0 10px;
@@ -99,7 +100,7 @@
 <body>
   <!-- Header -->
   <header>
-    <img src="logo-iusaori.png" alt="IUSAORI">
+    <img src="394_0bc639b891ddade45b80e3eec03de0a7-5_10_2025, 20_50_04.png" alt="IUSAORI">
     <nav>
       <a href="#catalogo">Catálogo</a>
       <a href="#contacto">Contacto</a>
@@ -138,6 +139,7 @@
   </footer>
 </body>
 </html>
+
 
 
 
