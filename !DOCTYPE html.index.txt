@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <title>IUSAORI - Perfumes Elegantes</title>
+  <style>
+    body { font-family: 'Helvetica Neue', sans-serif; margin: 0; background: #fdfdfd; color: #222; }
+    header { background: #111; color: white; padding: 20px; text-align: center; }
+    nav a { margin: 0 15px; color: white; text-decoration: none; font-weight: 300; }
+    section { padding: 60px 20px; text-align: center; }
+    h1, h2 { font-weight: 300; letter-spacing: 2px; }
+    .catalogo { display: flex; justify-content: center; gap: 40px; flex-wrap: wrap; }
+    .producto { border: 1px solid #ddd; padding: 20px; width: 220px; border-radius: 8px; background: #fff; }
+    .producto img { width: 100%; border-radius: 6px; }
+    .precio { font-size: 18px; color: #555; margin-top: 10px; }
+    footer { background: #111; color: white; text-align: center; padding: 20px; font-size: 14px; }
+  </style>
+</head>
+<body>
+  <header>
+    <img src="logo-iusaori.png" alt="IUSAORI" style="height:60px;">
+    <nav>
+      <a href="#catalogo">Catálogo</a>
+      <a href="#contacto">Contacto</a>
+    </nav>
+  </header>
+
+  <section id="catalogo">
+    <h2>Nuestros Perfumes</h2>
+    <div class="catalogo">
+      <div class="producto">
+        <img src="https://www.costco.com.mx/medias/sys_master/products/hfe/hd6/175849365700638.jpg" alt="Perfume 1">
+        <h3>Invictus victory elixir</h3>
+        <p class="precio">$350 MXN</p>
+      </div>
+      <div class="producto">
+        <img src="https://fraganciasfiord.com.mx/wp-content/uploads/2024/06/Perfume-Khamrah-Qahwa-de-Lattafa-de-100-ml-Original-en-Fragancias-Fiord.jpg" alt="Perfume 2">
+        <h3>Khawa</h3>
+        <p class="precio">$350 MXN</p>
+      </div>
+      <div class="producto">
+        <img src="https://img.vivantiscdn.net/photos/w600_h600_fN/p/_orig/AF/afnan-21-00-edp_14784173080825.jpg" alt="Perfume 3">
+        <h3>9PM</h3>
+        <p class="precio">$350 MXN</p>
+      </div>
+    </div>
+  </section>
+
+  <section id="contacto">
+    <h2>Contacto</h2>
+    <p>WhatsApp: +52 9901013343</p>
+    <p>Instagram: @iusaori_perfumes</p>
+    <p>Facebook: IUSAORI</p>
+  </section>
+
+  <footer>
+    <p>&copy; 2026 IUSAORI. Todos los derechos reservados.</p>
+  </footer>
+</body>
+</html>
