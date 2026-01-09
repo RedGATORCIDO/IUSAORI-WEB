@@ -5,7 +5,7 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>IUSAORI - Perfumes Elegantes</title>
   <style>
-    /* Fondo minimalista gris claro */
+    /* Fondo con patrón de ondas suaves */
     body {
       margin: 0;
       min-height: 100vh;
@@ -13,18 +13,26 @@
       flex-direction: column;
       font-family: Arial, sans-serif;
       color: #222;
-      background-color: #f0f0f0; /* gris claro */
+      background-image: repeating-linear-gradient(
+        to right,
+        #f5f5f5,
+        #f5f5f5 10px,
+        #e0e0e0 10px,
+        #e0e0e0 20px
+      );
     }
 
     main {
       flex: 1;
     }
 
-    /* Header y Footer simples */
+    /* Header y Footer minimalistas */
     header, footer {
-      background: #f0f0f0; /* mismo gris que el fondo */
+      background: rgba(255, 255, 255, 0.8);
+      backdrop-filter: blur(6px);
       text-align: center;
       padding: 15px;
+      box-shadow: 0 2px 6px rgba(0,0,0,0.1);
     }
 
     header img {
@@ -48,12 +56,12 @@
     }
 
     .producto {
-      background: rgba(255, 255, 255, 0.9); /* tarjetas limpias */
+      background: rgba(255, 255, 255, 0.9);
       border-radius: 10px;
       padding: 15px;
       width: 200px;
       text-align: center;
-      box-shadow: 0 2px 6px rgba(0,0,0,0.1); /* sombra ligera */
+      box-shadow: 0 2px 6px rgba(0,0,0,0.1);
       transition: transform 0.2s ease;
     }
 
@@ -129,6 +137,8 @@
   </footer>
 </body>
 </html>
+
+
 
 
 
