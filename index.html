@@ -8,9 +8,9 @@
     /* Estructura general */
     body {
       margin: 0;
-      min-height: 100vh;       /* ocupa toda la pantalla */
+      min-height: 100vh;
       display: flex;
-      flex-direction: column;  /* organiza header, main y footer */
+      flex-direction: column;
       font-family: Arial, sans-serif;
       background: #ffffff;
     }
@@ -19,16 +19,22 @@
       flex: 1; /* ocupa el espacio central y empuja el footer */
     }
 
-    /* Header */
-    header {
-      background-color: #faf3e0; /* beige elegante */
-      color: #222;
-      padding: 15px;
+    /* Header y Footer con estilo gota */
+    header, footer {
+      background: #faf3e0;
+      border-radius: 50% 50% 40% 40% / 30% 30% 70% 70%; /* forma tipo gota */
+      padding: 20px;
       text-align: center;
+      transition: transform 0.3s ease, border-radius 0.3s ease;
+    }
+
+    header:hover, footer:hover {
+      transform: scale(1.02) skewX(2deg); /* ligera deformación */
+      border-radius: 45% 55% 35% 45% / 35% 25% 65% 75%; /* cambia la curva */
     }
 
     header img {
-      height: 80px; /* tamaño moderado del logo */
+      height: 80px;
     }
 
     nav a {
@@ -82,14 +88,7 @@
       box-shadow: 0 6px 18px rgba(0,0,0,0.2);
     }
 
-    /* Footer */
-    footer {
-      background-color: #faf3e0; /* mismo beige que el header */
-      color: #222;
-      text-align: center;
-      padding: 15px;
-    }
-
+    /* Footer enlaces */
     footer a {
       color: #222;
       margin: 0 10px;
@@ -100,7 +99,7 @@
 <body>
   <!-- Header -->
   <header>
-    <img src="394_0bc639b891ddade45b80e3eec03de0a7-5_10_2025, 20_50_04.png" alt="IUSAORI">
+    <img src="logo-iusaori.png" alt="IUSAORI">
     <nav>
       <a href="#catalogo">Catálogo</a>
       <a href="#contacto">Contacto</a>
@@ -112,7 +111,7 @@
     <!-- Catálogo -->
     <section id="catalogo" class="catalogo">
       <div class="producto">
-        <img src="Paco-Rabanne-Men-s-Invictus-Victory-Elixir-EDP-Spray-1-7-oz-Fragrances-3349668614516_da2c9286-4a2a-49d2-a342-0b6154ebab18.55bbec1d49cf44d12ef2f66a1a552e5f-removebg-preview.png" alt="Perfume Aurora">
+        <img src="Paco-Rabanne-Men-s-Invictus-Victory-Elixir.png" alt="Perfume Aurora">
         <h3>Invictus Victory Elixir</h3>
         <p>$350 MXN</p>
       </div>
@@ -122,7 +121,7 @@
         <p>$350 MXN</p>
       </div>
       <div class="producto">
-        <img src="afnan-21-00-edp_14784173080825.jpg" alt="Perfume Océano">
+        <img src="afnan-21-00-edp.jpg" alt="Perfume Océano">
         <h3>9PM</h3>
         <p>$350 MXN</p>
       </div>
@@ -130,11 +129,11 @@
   </main>
 
   <!-- Footer -->
-  <footer>
+  <footer id="contacto">
     <p>© 2026 IUSAORI - Perfumes Elegantes</p>
     <p>Síguenos en:
       <a href="https://instagram.com/iusaori">Instagram</a> |
-      <a href="https://facebook.com/iusaori">Facebook</a>
+      <a href="https://www.facebook.com/profile.php?id=61585943323672">Facebook</a>
     </p>
   </footer>
 </body>
