@@ -5,6 +5,20 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>IUSAORI - Perfumes Elegantes</title>
   <style>
+ /* Estructura general */
+    body {
+      margin: 0;
+      min-height: 100vh;       /* asegura que el body ocupe toda la pantalla */
+      display: flex;
+      flex-direction: column;  /* organiza header, main y footer en columna */
+      font-family: Arial, sans-serif;
+      background: #ffffff;
+    }
+
+    main {
+      flex: 1; /* empuja el footer hacia abajo */
+    }
+
     /* Header */
     header {
       background-color: #faf3e0; /* beige elegante */
@@ -74,7 +88,6 @@
       color: #222;
       text-align: center;
       padding: 15px;
-      margin-top: 30px;
     }
 
     footer a {
@@ -85,7 +98,6 @@
   </style>
 </head>
 <body>
-
   <!-- Header -->
   <header>
     <img src="394_0bc639b891ddade45b80e3eec03de0a7-5_10_2025, 20_50_04.png" alt="IUSAORI">
@@ -94,7 +106,6 @@
       <a href="#contacto">Contacto</a>
     </nav>
   </header>
-
   <!-- Catálogo -->
   <section id="catalogo" class="catalogo">
     <div class="producto">
@@ -102,20 +113,17 @@
       <h3>Invictus Victory Elixir</h3>
       <p>$350 MXN</p>
     </div>
-
     <div class="producto">
       <img src="Perfumes-Decants-20.jpg" alt="Perfume Sol">
       <h3>Khawa</h3>
       <p>$350 MXN</p>
     </div>
-
     <div class="producto">
       <img src="afnan-21-00-edp_14784173080825.jpg" alt="Perfume Océano">
       <h3>9PM</h3>
       <p>$350 MXN</p>
     </div>
   </section>
-
   <!-- Footer -->
   <footer>
     <p>© 2026 IUSAORI - Perfumes Elegantes</p>
@@ -124,9 +132,9 @@
       <a href="https://facebook.com/iusaori">Facebook</a>
     </p>
   </footer>
-
 </body>
 </html>
+
 
 
 
