@@ -17,7 +17,6 @@
       background-size: 300% 300%;
       animation: movimientoFondo 8s ease infinite;
     }
-
     @keyframes movimientoFondo {
       0% {background-position: 0% 50%;}
       50% {background-position: 100% 50%;}
@@ -34,9 +33,7 @@
       padding: 15px;
       box-shadow: 0 2px 6px rgba(0,0,0,0.2);
     }
-
     header img { height: 80px; }
-
     nav a {
       margin: 0 15px;
       color: #222;
@@ -49,6 +46,28 @@
     }
     nav a:hover { background: rgba(255,255,255,0.4); }
 
+    /* Cuadro de presentación */
+    .presentacion {
+      background: rgba(255, 255, 255, 0.3);
+      backdrop-filter: blur(10px);
+      border-radius: 15px;
+      padding: 30px;
+      margin: 40px auto;
+      max-width: 800px;
+      text-align: center;
+      box-shadow: 0 6px 20px rgba(0,0,0,0.25);
+      animation: aparecerAbajo 1s ease forwards;
+    }
+    .presentacion h2 {
+      font-size: 28px;
+      margin-bottom: 15px;
+      color: #222;
+    }
+    .presentacion p {
+      font-size: 18px;
+      color: #333;
+      line-height: 1.6;
+    }
     /* Catálogo */
     .catalogo {
       display: flex;
@@ -83,9 +102,8 @@
       transition: all 0.4s ease;
       overflow: hidden;
       position: relative;
-      opacity: 0; /* inicial invisible */
+      opacity: 0;
     }
-
     .producto img {
       width: 100%;
       height: 180px;
@@ -93,7 +111,6 @@
       border-radius: 8px;
       transition: transform 0.4s ease;
     }
-
     .producto h3 {
       margin: 10px 0 5px;
       font-size: 16px;
@@ -101,14 +118,8 @@
       transition: color 0.5s ease;
     }
     .producto h3:hover { color: #d4af37; }
+    .producto p { margin: 0; font-weight: bold; color: #444; }
 
-    .producto p {
-      margin: 0;
-      font-weight: bold;
-      color: #444;
-    }
-
-    /* Info oculta */
     .info-extra {
       max-height: 0;
       opacity: 0;
@@ -119,7 +130,6 @@
       margin-top: 10px;
     }
 
-    /* Hover: expandir tarjeta y mostrar info */
     .producto:hover {
       transform: scale(1.1);
       box-shadow: 0 10px 20px rgba(0,0,0,0.3), 0 0 15px rgba(255,255,255,0.4);
@@ -130,7 +140,6 @@
       opacity: 1;
     }
 
-    /* Animación escalonada y variada */
     .producto:nth-child(1) {
       animation: aparecerIzquierda 0.8s ease forwards;
       animation-delay: 0.2s;
@@ -158,7 +167,7 @@
 </head>
 <body>
   <header>
-    <img src="394_0bc639b891ddade45b80e3eec03de0a7-5_10_2025, 20_50_04.png" alt="IUSAORI">
+    <img src="394_0bc639b891ddade45b80e3eec03de0a7.png" alt="IUSAORI">
     <nav>
       <a href="#catalogo">Catálogo</a>
       <a href="#contacto">Contacto</a>
@@ -166,9 +175,22 @@
   </header>
 
   <main>
+    <!-- Cuadro de presentación -->
+    <section class="presentacion">
+      <h2>Presentación IUSAORI</h2>
+      <p>
+        En IUSAORI ofrecemos perfumes <strong>100% originales</strong>, cuidadosamente envasados en recipientes más pequeños para que sean 
+        <strong>más prácticos de llevar</strong> y <strong>más accesibles económicamente</strong>, sin perder la esencia ni la calidad del perfume original.
+      </p>
+      <p>
+        Nuestra misión es que disfrutes de tus fragancias favoritas con <strong>elegancia, comodidad y ahorro</strong>.
+      </p>
+    </section>
+
+    <!-- Catálogo -->
     <section id="catalogo" class="catalogo">
       <div class="producto">
-        <img src="Paco-Rabanne-Men-s-Invictus-Victory-Elixir-EDP-Spray-1-7-oz-Fragrances-3349668614516_da2c9286-4a2a-49d2-a342-0b6154ebab18.55bbec1d49cf44d12ef2f66a1a552e5f-removebg-preview.png" alt="Perfume Aurora">
+        <img src="Paco-Rabanne-Men-s-Invictus-Victory-Elixir.png" alt="Perfume Aurora">
         <h3>Invictus Victory Elixir</h3>
         <p>$350 MXN</p>
         <div class="info-extra">
@@ -184,7 +206,7 @@
         </div>
       </div>
       <div class="producto">
-        <img src="afnan-21-00-edp_14784173080825.jpg" alt="Perfume Océano">
+        <img src="afnan-21-00-edp.jpg" alt="Perfume Océano">
         <h3>9PM</h3>
         <p>$350 MXN</p>
         <div class="info-extra">
@@ -194,6 +216,7 @@
     </section>
   </main>
 
+  <!-- Footer -->
   <footer>
     <p>© 2026 IUSAORI - Perfumes Elegantes</p>
     <p>Síguenos en:
@@ -213,7 +236,16 @@
         const centerY = rect.height / 2;
         const rotateX = ((y - centerY) / centerY) * 10;
         const rotateY = ((x - centerX) / centerX) * 10;
-        card.style.transform = `rotateX(${rotateX}deg) rotateY(${rotateY}deg) scale(1
+        card.style.transform = `rotateX(${rotateX}deg) rotateY(${rotateY}deg) scale(1.05)`;
+      });
+
+      card.addEventListener('mouseleave', () => {
+        card.style.transform = 'rotateX(0) rotateY(0) scale(1)';
+      });
+    });
+  </script>
+</body>
+</html>
 
 
 
