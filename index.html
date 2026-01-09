@@ -4,26 +4,34 @@
   <meta charset="UTF-8">
   <title>IUSAORI - Perfumes Elegantes</title>
   <style>
-    .producto {
-    background: rgba(255, 255, 255, 0.2); /* efecto transparente tipo cristal */
-    border-radius: 20px;                  /* esquinas redondeadas */
-    padding: 20px;
-    margin: 15px;
-    text-align: center;
-    backdrop-filter: blur(10px);          /* desenfoque para efecto agua/cristal */
-    box-shadow: 0 4px 15px rgba(0,0,0,0.1); /* sombra suave */
-    transition: transform 0.3s ease, box-shadow 0.3s ease;
-  }
+   .catalogo {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 20px; /* espacio entre cuadros */
+}
 
-  .producto img {
-    max-width: 100%;
-    border-radius: 15px; /* redondear también las imágenes */
-  }
+.producto {
+  background: rgba(255, 255, 255, 0.2); /* efecto cristal */
+  border-radius: 15px;                  /* esquinas redondeadas */
+  padding: 15px;                        /* menos relleno para compactar */
+  width: 220px;                         /* tamaño fijo más compacto */
+  text-align: center;
+  backdrop-filter: blur(8px);
+  box-shadow: 0 4px 12px rgba(0,0,0,0.1);
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
 
-  .producto:hover {
-    transform: translateY(-10px) scale(1.05); /* se levanta y crece un poco */
-    box-shadow: 0 8px 25px rgba(0,0,0,0.2);   /* sombra más marcada al pasar el mouse */
-  }
+.producto img {
+  max-width: 100%;
+  border-radius: 10px;
+}
+
+.producto:hover {
+  transform: translateY(-5px) scale(1.03); /* animación más sutil */
+  box-shadow: 0 6px 18px rgba(0,0,0,0.2);
+}
+
   </style>
 </head>
 <body>
@@ -69,6 +77,7 @@
 </body>
 
 </html>
+
 
 
 
