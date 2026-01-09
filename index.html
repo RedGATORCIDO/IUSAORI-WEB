@@ -2,95 +2,132 @@
 <html lang="es">
 <head>
   <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>IUSAORI - Perfumes Elegantes</title>
   <style>
-  .catalogo {
-    display: flex;
-    flex-wrap: wrap;
-    justify-content: center;
-    gap: 20px; /* espacio entre cuadros */
-    margin: 30px 0;
-  }
+    /* Header */
+    header {
+      background-color: #faf3e0; /* beige elegante */
+      color: #222;
+      padding: 15px;
+      text-align: center;
+    }
 
-  .producto {
-    background: rgba(255, 255, 255, 0.2); /* efecto cristal */
-    border-radius: 15px;                  /* esquinas redondeadas */
-    padding: 15px;
-    width: 200px;                         /* tamaño compacto */
-    text-align: center;
-    backdrop-filter: blur(8px);
-    box-shadow: 0 4px 12px rgba(0,0,0,0.1);
-    transition: transform 0.3s ease, box-shadow 0.3s ease;
-  }
+    header img {
+      height: 80px; /* tamaño moderado del logo */
+    }
 
-  .producto img {
-    width: 100%;
-    height: 180px;        /* altura fija para uniformidad */
-    object-fit: cover;    /* recorta la imagen sin deformarla */
-    border-radius: 10px;
-  }
+    nav a {
+      margin: 0 15px;
+      color: #222;
+      text-decoration: none;
+      font-weight: bold;
+    }
 
-  .producto h3 {
-    margin: 10px 0 5px;
-    font-size: 16px;
-    color: #222;
-  }
+    /* Catálogo */
+    .catalogo {
+      display: flex;
+      flex-wrap: wrap;
+      justify-content: center;
+      gap: 20px;
+      margin: 30px 0;
+    }
 
-  .producto p {
-    margin: 0;
-    font-weight: bold;
-    color: #444;
-  }
+    .producto {
+      background: rgba(255, 255, 255, 0.2);
+      border-radius: 15px;
+      padding: 15px;
+      width: 200px;
+      text-align: center;
+      backdrop-filter: blur(8px);
+      box-shadow: 0 4px 12px rgba(0,0,0,0.1);
+      transition: transform 0.3s ease, box-shadow 0.3s ease;
+    }
 
-  .producto:hover {
-    transform: translateY(-5px) scale(1.03); /* animación sutil */
-    box-shadow: 0 6px 18px rgba(0,0,0,0.2);
-  }
+    .producto img {
+      width: 100%;
+      height: 180px;
+      object-fit: cover;
+      border-radius: 10px;
+    }
+
+    .producto h3 {
+      margin: 10px 0 5px;
+      font-size: 16px;
+      color: #222;
+    }
+
+    .producto p {
+      margin: 0;
+      font-weight: bold;
+      color: #444;
+    }
+
+    .producto:hover {
+      transform: translateY(-5px) scale(1.03);
+      box-shadow: 0 6px 18px rgba(0,0,0,0.2);
+    }
+
+    /* Footer */
+    footer {
+      background-color: #faf3e0; /* mismo beige que el header */
+      color: #222;
+      text-align: center;
+      padding: 15px;
+      margin-top: 30px;
+    }
+
+    footer a {
+      color: #222;
+      margin: 0 10px;
+      text-decoration: none;
+    }
   </style>
 </head>
 <body>
+
+  <!-- Header -->
   <header>
-    <img src="394_0bc639b891ddade45b80e3eec03de0a7-5_10_2025, 20_50_04.png" alt="IUSAORI" style="height:220px;">
+    <img src="logo-iusaori.png" alt="Logo IUSAORI">
     <nav>
       <a href="#catalogo">Catálogo</a>
       <a href="#contacto">Contacto</a>
     </nav>
   </header>
 
-  <section id="catalogo">
-    <h2>Nuestros Perfumes</h2>
-    <div class="catalogo">
-      <div class="producto">
-        <img src="https://www.costco.com.mx/medias/sys_master/products/hfe/hd6/175849365700638.jpg" alt="Perfume 1">
-        <h3>Invictus victory elixir</h3>
-        <p class="precio">$350 MXN</p>
-      </div>
-      <div class="producto">
-        <img src="https://fraganciasfiord.com.mx/wp-content/uploads/2024/06/Perfume-Khamrah-Qahwa-de-Lattafa-de-100-ml-Original-en-Fragancias-Fiord.jpg" alt="Perfume 2">
-        <h3>Khawa</h3>
-        <p class="precio">$350 MXN</p>
-      </div>
-      <div class="producto">
-        <img src="https://img.vivantiscdn.net/photos/w600_h600_fN/p/_orig/AF/afnan-21-00-edp_14784173080825.jpg" alt="Perfume 3">
-        <h3>9PM</h3>
-        <p class="precio">$350 MXN</p>
-      </div>
+  <!-- Catálogo -->
+  <section id="catalogo" class="catalogo">
+    <div class="producto">
+      <img src="aurora.jpg" alt="Perfume Aurora">
+      <h3>Aurora</h3>
+      <p>$500 MXN</p>
+    </div>
+
+    <div class="producto">
+      <img src="sol.jpg" alt="Perfume Sol">
+      <h3>Sol</h3>
+      <p>$450 MXN</p>
+    </div>
+
+    <div class="producto">
+      <img src="oceano.jpg" alt="Perfume Océano">
+      <h3>Océano</h3>
+      <p>$480 MXN</p>
     </div>
   </section>
 
-  <section id="contacto">
-    <h2>Contacto</h2>
-    <p>WhatsApp: +52 9901013343</p>
-    <p>Instagram: @iusaori_perfumes</p>
-    <p>Facebook: IUSAORI</p>
-  </section>
-
+  <!-- Footer -->
   <footer>
-    <p>&copy; 2026 IUSAORI. Todos los derechos reservados.</p>
+    <p>© 2026 IUSAORI - Perfumes Elegantes</p>
+    <p>Síguenos en:
+      <a href="https://instagram.com/iusaori">Instagram</a> |
+      <a href="https://facebook.com/iusaori">Facebook</a>
+    </p>
   </footer>
-</body>
 
+</body>
 </html>
+
 
 
 
