@@ -5,28 +5,28 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>IUSAORI - Perfumes Elegantes</title>
   <style>
-    /* Fondo degradado dorado-negro */
+    /* Fondo degradado gris a blanco */
     body {
       margin: 0;
       min-height: 100vh;
       display: flex;
       flex-direction: column;
       font-family: Arial, sans-serif;
-      color: #fff;
-      background: linear-gradient(135deg, #000000, #d4af37); /* negro → dorado */
+      color: #222;
+      background: linear-gradient(135deg, #444444, #f5f5f5);
     }
 
     main {
       flex: 1;
     }
 
-    /* Header y Footer translúcidos */
+    /* Header y Footer minimalistas */
     header, footer {
-      background: rgba(0, 0, 0, 0.4); /* translúcido oscuro */
+      background: rgba(255, 255, 255, 0.8); /* translúcido claro */
       backdrop-filter: blur(6px);
       text-align: center;
       padding: 15px;
-      box-shadow: 0 4px 12px rgba(0,0,0,0.5);
+      box-shadow: 0 2px 6px rgba(0,0,0,0.1);
     }
 
     header img {
@@ -35,12 +35,9 @@
 
     nav a {
       margin: 0 15px;
-      color: #fff;
+      color: #222;
       text-decoration: none;
       font-weight: bold;
-      background: rgba(255,255,255,0.1);
-      padding: 5px 10px;
-      border-radius: 5px;
     }
 
     /* Catálogo */
@@ -53,47 +50,42 @@
     }
 
     .producto {
-      background: rgba(255, 255, 255, 0.1); /* efecto vidrio */
-      border-radius: 15px;
+      background: rgba(255, 255, 255, 0.9); /* tarjetas limpias */
+      border-radius: 10px;
       padding: 15px;
       width: 200px;
       text-align: center;
-      backdrop-filter: blur(10px);
-      box-shadow: 0 4px 12px rgba(0,0,0,0.5);
-      transition: transform 0.3s ease, box-shadow 0.3s ease;
+      box-shadow: 0 2px 6px rgba(0,0,0,0.1);
+      transition: transform 0.2s ease;
     }
 
     .producto img {
       width: 100%;
       height: 180px;
       object-fit: cover;
-      border-radius: 10px;
+      border-radius: 8px;
     }
 
     .producto h3 {
       margin: 10px 0 5px;
       font-size: 16px;
-      color: #fff;
+      color: #222;
     }
 
     .producto p {
       margin: 0;
       font-weight: bold;
-      color: #ffd700; /* dorado para precios */
+      color: #444;
     }
 
     .producto:hover {
-      transform: translateY(-5px) scale(1.03);
-      box-shadow: 0 6px 18px rgba(0,0,0,0.7);
+      transform: translateY(-3px);
     }
 
     footer a {
-      color: #fff;
+      color: #222;
       margin: 0 10px;
       text-decoration: none;
-      background: rgba(255,255,255,0.1);
-      padding: 5px 10px;
-      border-radius: 5px;
     }
   </style>
 </head>
@@ -139,6 +131,7 @@
   </footer>
 </body>
 </html>
+
 
 
 
