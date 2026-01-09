@@ -5,18 +5,20 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>IUSAORI - Perfumes Elegantes</title>
   <style>
- /* Estructura general */
+    /* Estructura general */
     body {
       margin: 0;
-      min-height: 100vh;       /* asegura que el body ocupe toda la pantalla */
+      min-height: 100vh;       /* ocupa toda la pantalla */
       display: flex;
-      flex-direction: column;  /* organiza header, main y footer en columna */
+      flex-direction: column;  /* organiza header, main y footer */
       font-family: Arial, sans-serif;
       background: #ffffff;
     }
+
     main {
-      flex: 1; /* empuja el footer hacia abajo */
+      flex: 1; /* ocupa el espacio central y empuja el footer */
     }
+
     /* Header */
     header {
       background-color: #faf3e0; /* beige elegante */
@@ -24,15 +26,18 @@
       padding: 15px;
       text-align: center;
     }
+
     header img {
       height: 80px; /* tamaño moderado del logo */
     }
+
     nav a {
       margin: 0 15px;
       color: #222;
       text-decoration: none;
       font-weight: bold;
     }
+
     /* Catálogo */
     .catalogo {
       display: flex;
@@ -41,6 +46,7 @@
       gap: 20px;
       margin: 30px 0;
     }
+
     .producto {
       background: rgba(255, 255, 255, 0.2);
       border-radius: 15px;
@@ -51,26 +57,31 @@
       box-shadow: 0 4px 12px rgba(0,0,0,0.1);
       transition: transform 0.3s ease, box-shadow 0.3s ease;
     }
+
     .producto img {
       width: 100%;
       height: 180px;
       object-fit: cover;
       border-radius: 10px;
     }
+
     .producto h3 {
       margin: 10px 0 5px;
       font-size: 16px;
       color: #222;
     }
+
     .producto p {
       margin: 0;
       font-weight: bold;
       color: #444;
     }
+
     .producto:hover {
       transform: translateY(-5px) scale(1.03);
       box-shadow: 0 6px 18px rgba(0,0,0,0.2);
     }
+
     /* Footer */
     footer {
       background-color: #faf3e0; /* mismo beige que el header */
@@ -78,6 +89,7 @@
       text-align: center;
       padding: 15px;
     }
+
     footer a {
       color: #222;
       margin: 0 10px;
@@ -94,24 +106,29 @@
       <a href="#contacto">Contacto</a>
     </nav>
   </header>
-  <!-- Catálogo -->
-  <section id="catalogo" class="catalogo">
-    <div class="producto">
-      <img src="Paco-Rabanne-Men-s-Invictus-Victory-Elixir-EDP-Spray-1-7-oz-Fragrances-3349668614516_da2c9286-4a2a-49d2-a342-0b6154ebab18.55bbec1d49cf44d12ef2f66a1a552e5f-removebg-preview.png" alt="Perfume Aurora">
-      <h3>Invictus Victory Elixir</h3>
-      <p>$350 MXN</p>
-    </div>
-    <div class="producto">
-      <img src="Perfumes-Decants-20.jpg" alt="Perfume Sol">
-      <h3>Khawa</h3>
-      <p>$350 MXN</p>
-    </div>
-    <div class="producto">
-      <img src="afnan-21-00-edp_14784173080825.jpg" alt="Perfume Océano">
-      <h3>9PM</h3>
-      <p>$350 MXN</p>
-    </div>
-  </section>
+
+  <!-- Contenido principal -->
+  <main>
+    <!-- Catálogo -->
+    <section id="catalogo" class="catalogo">
+      <div class="producto">
+        <img src="Paco-Rabanne-Men-s-Invictus-Victory-Elixir-EDP-Spray-1-7-oz-Fragrances-3349668614516_da2c9286-4a2a-49d2-a342-0b6154ebab18.55bbec1d49cf44d12ef2f66a1a552e5f-removebg-preview.png" alt="Perfume Aurora">
+        <h3>Invictus Victory Elixir</h3>
+        <p>$350 MXN</p>
+      </div>
+      <div class="producto">
+        <img src="Perfumes-Decants-20.jpg" alt="Perfume Sol">
+        <h3>Khawa</h3>
+        <p>$350 MXN</p>
+      </div>
+      <div class="producto">
+        <img src="afnan-21-00-edp_14784173080825.jpg" alt="Perfume Océano">
+        <h3>9PM</h3>
+        <p>$350 MXN</p>
+      </div>
+    </section>
+  </main>
+
   <!-- Footer -->
   <footer>
     <p>© 2026 IUSAORI - Perfumes Elegantes</p>
@@ -122,6 +139,7 @@
   </footer>
 </body>
 </html>
+
 
 
 
