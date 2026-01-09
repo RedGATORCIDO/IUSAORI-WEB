@@ -5,20 +5,17 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>IUSAORI - Perfumes Elegantes</title>
   <style>
-    <video autoplay muted loop id="videoFondo">
-  <source src="videoplayback.mp4" type="video/mp4">
-</video>
+    /* Video de fondo */
+    #videoFondo {
+      position: fixed;
+      top: 0;
+      left: 0;
+      min-width: 100%;
+      min-height: 100%;
+      z-index: -1;
+      object-fit: cover;
+    }
 
-<style>
-#videoFondo {
-  position: fixed;
-  top: 0;
-  left: 0;
-  min-width: 100%;
-  min-height: 100%;
-  z-index: -1;
-  object-fit: cover;
-}
     /* Estructura general */
     body {
       margin: 0;
@@ -112,6 +109,12 @@
   </style>
 </head>
 <body>
+  <!-- Video de fondo -->
+  <video autoplay muted loop id="videoFondo">
+    <source src="videoplayback.mp4" type="video/mp4">
+    Tu navegador no soporta video HTML5.
+  </video>
+
   <!-- Header -->
   <header>
     <img src="394_0bc639b891ddade45b80e3eec03de0a7-5_10_2025, 20_50_04.png" alt="IUSAORI">
@@ -153,6 +156,8 @@
   </footer>
 </body>
 </html>
+
+
 
 
 
