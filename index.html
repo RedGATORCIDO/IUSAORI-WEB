@@ -5,7 +5,7 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>IUSAORI - Perfumes Elegantes</title>
   <style>
-    /* Fondo degradado animado con más contraste */
+    /* Fondo degradado animado */
     body {
       margin: 0;
       min-height: 100vh;
@@ -73,7 +73,8 @@
       text-align: center;
       backdrop-filter: blur(10px);
       box-shadow: 0 2px 6px rgba(0,0,0,0.2);
-      transition: transform 0.3s ease, box-shadow 0.3s ease;
+      transition: transform 0.1s ease;
+      perspective: 1000px;
     }
 
     .producto img {
@@ -91,18 +92,13 @@
     }
 
     .producto h3:hover {
-      color: #d4af37; /* dorado elegante */
+      color: #d4af37;
     }
 
     .producto p {
       margin: 0;
       font-weight: bold;
       color: #444;
-    }
-
-    .producto:hover {
-      transform: translateY(-5px) scale(1.03);
-      box-shadow: 0 6px 18px rgba(0,0,0,0.3), 0 0 10px rgba(255,255,255,0.4);
     }
 
     footer a {
@@ -160,8 +156,29 @@
       <a href="https://www.facebook.com/profile.php?id=61585943323672">Facebook</a>
     </p>
   </footer>
+
+  <!-- Script para efecto parallax hover -->
+  <script>
+    document.querySelectorAll('.producto').forEach(card => {
+      card.addEventListener('mousemove', e => {
+        const rect = card.getBoundingClientRect();
+        const x = e.clientX - rect.left;
+        const y = e.clientY - rect.top;
+        const centerX = rect.width / 2;
+        const centerY = rect.height / 2;
+        const rotateX = ((y - centerY) / centerY) * 10; // inclinación vertical
+        const rotateY = ((x - centerX) / centerX) * 10; // inclinación horizontal
+        card.style.transform = `rotateX(${rotateX}deg) rotateY(${rotateY}deg) scale(1.05)`;
+      });
+
+      card.addEventListener('mouseleave', () => {
+        card.style.transform = 'rotateX(0) rotateY(0) scale(1)';
+      });
+    });
+  </script>
 </body>
 </html>
+
 
 
 
