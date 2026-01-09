@@ -4,7 +4,7 @@
   <meta charset="UTF-8">
   <title>IUSAORI - Perfumes Elegantes</title>
   <style>
-   .catalogo {
+    .catalogo {
   display: flex;
   flex-wrap: wrap;
   justify-content: center;
@@ -14,8 +14,8 @@
 .producto {
   background: rgba(255, 255, 255, 0.2); /* efecto cristal */
   border-radius: 15px;                  /* esquinas redondeadas */
-  padding: 15px;                        /* menos relleno para compactar */
-  width: 220px;                         /* tamaño fijo más compacto */
+  padding: 15px;
+  width: 200px;                         /* tamaño compacto */
   text-align: center;
   backdrop-filter: blur(8px);
   box-shadow: 0 4px 12px rgba(0,0,0,0.1);
@@ -23,12 +23,14 @@
 }
 
 .producto img {
-  max-width: 100%;
+  width: 100%;
+  height: 180px;        /* altura fija para uniformidad */
+  object-fit: cover;    /* recorta la imagen sin deformarla */
   border-radius: 10px;
 }
 
 .producto:hover {
-  transform: translateY(-5px) scale(1.03); /* animación más sutil */
+  transform: translateY(-5px) scale(1.03); /* animación sutil */
   box-shadow: 0 6px 18px rgba(0,0,0,0.2);
 }
 
@@ -77,6 +79,7 @@
 </body>
 
 </html>
+
 
 
 
