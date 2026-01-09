@@ -26,13 +26,13 @@
       flex: 1;
     }
 
-    /* Header y Footer minimalistas */
+    /* Header y Footer translúcidos */
     header, footer {
-      background: rgba(255, 255, 255, 0.8);
-      backdrop-filter: blur(6px);
+      background: rgba(255, 255, 255, 0.3); /* transparencia */
+      backdrop-filter: blur(8px);           /* desenfoque */
       text-align: center;
       padding: 15px;
-      box-shadow: 0 2px 6px rgba(0,0,0,0.1);
+      box-shadow: 0 2px 6px rgba(0,0,0,0.2);
     }
 
     header img {
@@ -44,6 +44,9 @@
       color: #222;
       text-decoration: none;
       font-weight: bold;
+      background: rgba(255,255,255,0.2); /* enlaces translúcidos */
+      padding: 5px 10px;
+      border-radius: 5px;
     }
 
     /* Catálogo */
@@ -56,12 +59,13 @@
     }
 
     .producto {
-      background: rgba(255, 255, 255, 0.9);
+      background: rgba(255, 255, 255, 0.25); /* translúcido tipo vidrio */
       border-radius: 10px;
       padding: 15px;
       width: 200px;
       text-align: center;
-      box-shadow: 0 2px 6px rgba(0,0,0,0.1);
+      backdrop-filter: blur(10px);
+      box-shadow: 0 2px 6px rgba(0,0,0,0.2);
       transition: transform 0.2s ease;
     }
 
@@ -92,6 +96,9 @@
       color: #222;
       margin: 0 10px;
       text-decoration: none;
+      background: rgba(255,255,255,0.2); /* enlaces translúcidos */
+      padding: 5px 10px;
+      border-radius: 5px;
     }
   </style>
 </head>
@@ -137,6 +144,7 @@
   </footer>
 </body>
 </html>
+
 
 
 
