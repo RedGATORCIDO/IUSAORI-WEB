@@ -4,16 +4,26 @@
   <meta charset="UTF-8">
   <title>IUSAORI - Perfumes Elegantes</title>
   <style>
-    body { font-family: 'Helvetica Neue', sans-serif; margin: 0; background: #ffffff; color: #222; }
-    header { background: #faf3e0; color: white; padding: 20px; text-align: center; }
-    nav a { margin: 0 15px; color: white; text-decoration: none; font-weight: 300; }
-    section { padding: 60px 20px; text-align: center; }
-    h1, h2 { font-weight: 300; letter-spacing: 2px; }
-    .catalogo { display: flex; justify-content: center; gap: 40px; flex-wrap: wrap; }
-    .producto { border: 1px solid #ddd; padding: 20px; width: 220px; border-radius: 8px; background: #fff; }
-    .producto img { width: 100%; border-radius: 6px; }
-    .precio { font-size: 18px; color: #555; margin-top: 10px; }
-    footer { background: #111; color: white; text-align: center; padding: 20px; font-size: 14px; }
+    .producto {
+    background: rgba(255, 255, 255, 0.2); /* efecto transparente tipo cristal */
+    border-radius: 20px;                  /* esquinas redondeadas */
+    padding: 20px;
+    margin: 15px;
+    text-align: center;
+    backdrop-filter: blur(10px);          /* desenfoque para efecto agua/cristal */
+    box-shadow: 0 4px 15px rgba(0,0,0,0.1); /* sombra suave */
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+  }
+
+  .producto img {
+    max-width: 100%;
+    border-radius: 15px; /* redondear también las imágenes */
+  }
+
+  .producto:hover {
+    transform: translateY(-10px) scale(1.05); /* se levanta y crece un poco */
+    box-shadow: 0 8px 25px rgba(0,0,0,0.2);   /* sombra más marcada al pasar el mouse */
+  }
   </style>
 </head>
 <body>
@@ -59,6 +69,7 @@
 </body>
 
 </html>
+
 
 
 
